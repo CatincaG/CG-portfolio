@@ -1,12 +1,50 @@
 *
 {
-    background: #ffaf19;
+    background: #4F092F;
 }
 
+/*
+Navigation bar
+*/
 nav .nav-items
 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
+    color: #F6F7D1;
 }
+
+/*
+Parallax
+*/
+.parallax-illustration
+{
+    height: 768px;
+    width: auto;
+    background: #ffaf19
+}
+
+/*
+Skills and passions section
+*/
+.section-title
+{
+    text-align: center;
+    color: #F6F7D1;
+}
+
+.skills-scroll
+{
+    color: #F6F7D1;
+    font-size: 40px;
+}
+
+.skill-row span:hover
+{
+    color: aqua;
+}
+
+/*
+Projects section
+*/
