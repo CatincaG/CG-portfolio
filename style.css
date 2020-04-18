@@ -1,50 +1,144 @@
-*
+body
 {
-    background: #4F092F;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #070544;
+    background: #FDF9ED;
 }
 
-/*
-Navigation bar
+/**
+* HEADER
 */
+header
+{
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 174, 25, 0);
+}
+
+.logo
+{
+    margin-left: 15px;
+    width: 36.5px;
+    height: 48px;
+}
+
+
 nav .nav-items
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    margin-right: 40px;
     list-style: none;
-    color: #F6F7D1;
+    color: #E04483;
 }
 
-/*
-Parallax
-*/
-.parallax-illustration
+.item
 {
-    height: 768px;
-    width: auto;
-    background: #ffaf19
+    padding: 0 20px;
 }
 
-/*
-Skills and passions section
+.item a
+{
+    text-decoration: none;
+    color: #E04483;
+}
+
+
+/**
+* MAIN
 */
+main
+{
+    position: absolute;
+    margin-top: 15%;
+}
+
+.introduction
+{
+    margin-left: 40px;
+}
+
+.name h1
+{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.rectangle
+{
+    width: 80px;
+    height: 6px;
+    background: #E04483;
+}
+
+.person-description
+{
+    font-size: 25px;
+    width: 1100px;
+}
+
+
+/* Skills and passions section */
+
 .section-title
 {
+    margin: 80px;
     text-align: center;
-    color: #F6F7D1;
+    color: #E04483;
+    font-weight: 400;
 }
+
 
 .skills-scroll
 {
-    color: #F6F7D1;
-    font-size: 40px;
+    color: #361D9D;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+/*.skill-row
+{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}*/
+
+.skill-row span
+{
+    padding: 0 10px;
+}
+
+.skill-row span::after
+{
+    content: ",";
 }
 
 .skill-row span:hover
 {
-    color: aqua;
+    color: #E67FC4;
+    cursor: pointer;
 }
 
-/*
-Projects section
-*/
+.hobbies-list
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hobby-item p
+{
+    color: #361D9D;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Projects section */
+
