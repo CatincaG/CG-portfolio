@@ -2,10 +2,11 @@ body
 {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: #070544;
-    background: #FDF9ED;
+    background: #FEF8E8;
 }
 
 /**
@@ -13,9 +14,10 @@ body
 */
 header
 {
-    position: fixed;
+    /*position: fixed;
     top: 10px;
     width: 100%;
+    z-index: 100;*/
     display: flex;
     justify-content: space-between;
     background: rgba(255, 174, 25, 0);
@@ -35,6 +37,7 @@ nav .nav-items
     flex-direction: row;
     margin-right: 40px;
     list-style: none;
+    font-size: 22px;
     color: #E04483;
 }
 
@@ -55,20 +58,20 @@ nav .nav-items
 */
 main
 {
-    position: absolute;
     margin-top: 15%;
 }
 
 .introduction
 {
-    margin-left: 40px;
+    margin-left: 95px;
+    margin-bottom: 280px;
 }
 
 .name h1
 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 53px;
 }
 
 .rectangle
@@ -80,7 +83,7 @@ main
 
 .person-description
 {
-    font-size: 25px;
+    font-size: 22px;
     width: 1100px;
 }
 
@@ -89,17 +92,17 @@ main
 
 .section-title
 {
-    margin: 80px;
+    margin-top: 160px;
     text-align: center;
     color: #E04483;
     font-weight: 400;
+    font-size: 37px;
 }
-
 
 .skills-scroll
 {
     color: #361D9D;
-    font-size: 50px;
+    font-size: 44px;
     font-weight: 400;
 }
 
@@ -122,7 +125,7 @@ main
 
 .skill-row span:hover
 {
-    color: #E67FC4;
+    color: #E6699C;
     cursor: pointer;
 }
 
@@ -138,7 +141,168 @@ main
     color: #361D9D;
     text-align: center;
     font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
+
 
 /* Projects section */
 
+.project-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px 95px 86px 95px;
+}
+
+.project-description
+{
+    margin-left: 50px;
+}
+
+.project-description-reverse
+{
+    margin-right: 50px;
+}
+
+.project-type
+{
+    color: #EC8FB5;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.project-title
+{
+    color: #361D9D;
+    font-family: 'Playfair Display', serif;
+    font-size: 31px;
+}
+
+.project-body
+{
+    font-size: 18px;
+}
+
+.button-cta-more
+{
+    width: 160px;
+    height: 40px;
+    background: rgba(224, 68, 130, 0);
+    border: 2px solid #E04483;
+    border-radius: 10px;
+    color: #E04483;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+}
+
+.button-cta-more:hover
+{
+    background: #E04483;
+    cursor: pointer;
+    color: white;
+}
+
+/*.button-cta-more .button-text
+{
+    text-align: center;
+    margin-top: 8px;
+    color: #E04483;
+    font-size: 18px;
+    font-weight: bold;
+}*/
+
+
+/* Illustrations section */
+
+.illustrations-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#dribbble-account
+{
+    text-align: center;
+}
+
+#dribbble-link
+{
+    text-decoration: none;
+    color: #E04483;
+    font-weight: bold;
+}
+
+
+/* Contact section */
+
+.contact-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px 95px 86px 95px;
+}
+
+.contact-text
+{
+    margin-left: 50px;
+}
+
+#email-link
+{
+    text-decoration: none;
+    color: #E04483;
+}
+
+.contact-social-media a
+{
+    margin-right: 24px;
+}
+
+/**
+* FOOTER
+*/
+footer
+{
+    /*position: absolute;
+    bottom: 0;*/
+    width: 100%;
+    height: 100px;
+    background: #070544;
+}
+
+.footer-content
+{
+    margin-left: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.footer-social-media
+{
+    margin-right: 70px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright
+{
+    text-align: center;
+    color: #ffffff;
+    font-size: 9px;
+}
+
+.sm-icons a
+{
+    margin: 8px;
+}
